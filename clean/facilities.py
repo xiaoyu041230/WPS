@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Load dataset
-file_path = "cropFacilities.csv"
+file_path = "../originalDataFiles/cropFacilities.csv"
 df_facilities = pd.read_csv(file_path)
 
 # Step 1: Drop unnecessary columns

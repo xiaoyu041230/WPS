@@ -1,9 +1,9 @@
 import pandas as pd
 
 # Load datasets
-pesticide_applied_df = pd.read_csv("2017Pesticide.csv")
-facilities_df = pd.read_csv("facilitiesTotal_cleaned.csv")
-wps_data_df = pd.read_csv("cleaned_inspection_data.csv")  # Already cleaned
+pesticide_applied_df = pd.read_csv("../originalDataFiles/2017Pesticide.csv")
+facilities_df = pd.read_csv("../cleanedDataFiles/facilitiesTotal_cleaned.csv")
+wps_data_df = pd.read_csv("../cleanedDataFiles/cleaned_inspection_data.csv")  # Already cleaned
 
 # Rename relevant columns for clarity before merging
 pesticide_applied_df = pesticide_applied_df.rename(columns={"value": "Pesticide_applied_acreage"})

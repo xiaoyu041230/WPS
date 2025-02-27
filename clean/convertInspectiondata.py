@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Load WPS data (Modify this if you're loading from a different location)
-wps_data_df = pd.read_csv("wps-data-cleaned-filtered.csv")
+wps_data_df = pd.read_csv("../cleanedDataFiles/wps-data-cleaned-filtered.csv")
 
 # Melt the inspection data into long format
 inspection_long_df = wps_data_df.melt(id_vars=["state"], var_name="year", value_name="num_inspections")

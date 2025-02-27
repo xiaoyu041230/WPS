@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Load the merged dataset
-merged_data_df = pd.read_csv("merged_data.csv")
+merged_data_df = pd.read_csv("../merge/merged_data.csv")
 
 # Filter data for 2017 only
 data_2017 = merged_data_df[merged_data_df["year"] == 2017]

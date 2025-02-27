@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Load the dataset
-file_path = "wps-data.csv"  # Update this path if necessary
+file_path = "../originalDataFiles/wps-data.csv"  # Update this path if necessary
 df = pd.read_csv(file_path)
 
 # Step 1: Remove non-state rows (e.g., "National", U.S. territories)
